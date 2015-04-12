@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @post_attachment.post_id %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @post_attachment.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_post_attachment_path(@post_attachment) %> -
+
+<%= link_to post_attachments_path, class: 'btn btn-info btn-xs' do %>
+  <i class="glyphicon glyphicon-left"></i> Back
+<% end %>
